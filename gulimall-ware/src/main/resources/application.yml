@@ -6,6 +6,14 @@ spring:
     username: root
     url: jdbc:mysql://120.77.152.47:3306/gulimall_wms
     driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.77.152.47:8848
+
+  application:
+    name: gulimall-ware
+
 mybatis-plus:
   mapper-locations: classpath:mapper/**/*.xml
   global-config:
